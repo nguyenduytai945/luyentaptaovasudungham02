@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <fieldset>
+        <legend>Bàitập4</legend>
+        <input type="number" id="t">
+        <input type="submit" value="Kiểm tra" onclick="a();">
+        <span id="result"></span>
+    </fieldset>
+</body>
+<script>
+    function a() {
+        let inputa1 = parseInt(document.getElementById('t').value);
+        if (inputa1 === 0) {
+            let input = document.getElementById('result').innerHTML = 'Giá trị nhập vào là ' + inputa1;
+        } else {
+            let input = document.getElementById('result').innerHTML = 'Giá trị nhập vào không phải là 0';
+        }
+    }
+    let inputArray = [];
+</script>
+
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <fieldset>
+        <legend>Bài 5</legend>
+        <input type="number" id="bai5">
+        <input type="submit" value="Add" onclick="bai5Add();">
+        <input type="submit" value="Hiện thị" onclick="bai5result();">
+        <span id="result5"></span>
+    </fieldset>
+</body>
+<script>
+    function bai5Add() {
+        let idInput = document.getElementById('bai5').value;
+        inputArray1.push(idInput);
+        document.getElementById('result5').innerHTML = 'Giá trị trong mảng là ' + inputArray1.join(",");
+    }
+
+    function bai5result() {
+        let min = inputArray1[0]
+        for (let i = 1; i < inputArray1.length; i++) {
+            if (min > inputArray1[i]) {
+                min = inputArray1[i];
+            }
+            document.getElementById('result5').innerHTML = 'Giá trị nhỏ nhất ' + min;
+        }
+    }
+</script>
+
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <fieldset>
+        <legend>Bàitập6</legend>
+        <input type="number" id="t">
+        <input type="submit" value="Kiểm tra" onclick="a();">
+        <span id="result"></span>
+    </fieldset>
+</body>
+<script>
+    function a() {
+        let inputt1 = document.getElementById('t').value;
+        if (inputt1 > 0) {
+            document.getElementById('result').innerHTML = 'Giá trị ' + inputt1 + ' Là số nguyên dương';
+        } else {
+            document.getElementById('result').innerHTML = 'Giá trị ' + inputt1 + ' Là số nguyên âm';
+        }
+    }
+</script>
+
+</html>

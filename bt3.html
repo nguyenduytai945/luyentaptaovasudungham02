@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <fieldset>
+        <legend>Bàitập3</legend>
+        <input type="number" id="a">
+        <input type="submit" value="Tính giai Thừa" onclick="t();">
+        <span id="result"></span>
+    </fieldset>
+</body>
+<script>
+    function t() {
+        let inputa1 = document.getElementById('a').value;
+        let input = 1;
+        for (let i = 2; i <= inputa1; i++) {
+            input *= i;
+        }
+        document.getElementById('result').innerHTML = 'giai thừa của ' + inputa1 + ' là ' + input;
+    }
+</script>
+
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <fieldset>
+        <legend>Bàitập1</legend>
+        <input type="number" id="t">
+        <input type="submit" value="Tinh" onclick="a();">
+        <span id="result"></span>
+    </fieldset>
+</body>
+<script>
+    function a() {
+        let resulta1 = 0;
+        let inputa1 = document.getElementById('t').value;
+        resulta1 = inputa1 * inputa1;
+        document.getElementById('result').innerHTML = 'Bình Phương của ' + inputa1 + ' là ' + resulta1;
+    }
+</script>
+
+</html>

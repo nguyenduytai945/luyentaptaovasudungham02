@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+</head>
+
+<body>
+    <fieldset>
+        <legend>Bàitập2</legend>
+        <input type="number" id="baitap2">
+        <input type="submit" value="Tinh Dien Tich" onclick="dientich();">
+        <input type="submit" value="Tinh Chu Vi" onclick="chuvi();">
+        <span id="result"></span>
+    </fieldset>
+</body>
+<script>
+    function dientich() {
+        const PI = 3.14;
+        let inputa = document.getElementById('baitap2').value;
+        let tinhdientich = (inputa * inputa) * PI;
+        document.getElementById('result').innerHTML = 'Diện hình tròn S =' + tinhdientich;
+    }
+
+    function chuvi() {
+        const PI = 3.14;
+        let inputb = document.getElementById('baitap2').value;
+        let tinhchuvi = inputb * 2 * PI;
+        document.getElementById('result').innerHTML = 'Chu vi hình tròn C =' + tinhchuvi;
+    }
+</script>
+
+</html>
