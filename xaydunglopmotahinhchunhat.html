@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <canvas id="baitap" width="300" height="200" style="border:1px solid #FF1493;"></canvas>
+</body>
+<script>
+    let hinhchunhat = function(chieudai, chieurong) {
+        this.chieudai = chieudai;
+        this.chieurong = chieurong;
+        this.getchieudai = function() {
+            return chieudai;
+        }
+        this.getchieurong = function() {
+            return chieurong;
+        }
+        this.getchuvi = function() {
+            return (chieudai + chieurong) * 2;
+        }
+        this.getdientich = function() {
+            return chieudai * chieurong;
+        }
+    }
+    var t = document.getElementById("baitap");
+    let tai = new hinhchunhat(200, 100)
+    let chuvi = tai.getchuvi();
+    let dientich = tai.getdientich();
+    var ctx = t.getContext("2d");
+    ctx.fillStyle = "#00FFFF";
+    ctx.fillRect(0, 0, 200, 100);
+    document.write("<br>chu vi la " + chuvi + "<br>dien tich la " + dientich);
+</script>
+
+</html>
